@@ -22,6 +22,7 @@ COPY package.json /usr/src/node-red/
 RUN npm install
 RUN npm install node-red-contrib-modbus
 ENV PATH "$PATH:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin"
+RUN ln -s /usr/local/bin/node /usr/bin/node
 
 #IOx Labels
 LABEL "cisco.cpuarch"="x86_64" \
