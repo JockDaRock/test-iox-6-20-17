@@ -26,7 +26,7 @@ CMD ["ln -s /usr/local/bin/node /usr/bin/node"]
 
 #IOx Labels
 LABEL "cisco.cpuarch"="x86_64" \
-      "cisco.resources.profile"="c1.larger" \
+      "cisco.resources.profile"="c1.large" \
       # "cisco.resources.cpu"="600" \
       # "cisco.resources.memory"="200" \
       "cisco.resources.disk"="10" \
