@@ -28,10 +28,8 @@ LABEL "cisco.cpuarch"="x86_64" \
       "cisco.resources.profile"="custom" \
       "cisco.resources.cpu"="600" \
       "cisco.resources.memory"="50" \
-      cisco.resources.disk=10 \
+      "cisco.resources.disk"="10" \
       "cisco.resources.network.0.interface-name"="eth0"
-      #"cisco.resources.network.0.network-name"="iox-bridge0"
-      #"cisco.resources.network.0.ports.tcp"="{3000:3000}"
 
 # User configuration directory volume
 EXPOSE 1880
