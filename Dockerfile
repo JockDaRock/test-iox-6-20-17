@@ -38,6 +38,8 @@ EXPOSE 1880
 ENV FLOWS=flows.json
 
 
-CMD ["npm", "start", "--", "--userDir", "/data"]
+# CMD ["npm", "start", "--", "--userDir", "/data"]
+
+CMD ["/usr/src/node-red/loop.sh"]
 
 
