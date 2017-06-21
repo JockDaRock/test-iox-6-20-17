@@ -11,11 +11,11 @@ COPY loop.sh /usr/src/node-red/
 RUN chmod 777 /usr/src/node-red/loop.sh
 
 # Add node-red user so we aren't running as root.
-RUN adduser -h /usr/src/node-red -D -H node-red \
-    && chown -R node-red:node-red /data \
-    && chown -R node-red:node-red /usr/src/node-red
+#RUN adduser -h /usr/src/node-red -D -H node-red \
+#    && chown -R node-red:node-red /data \
+#    && chown -R node-red:node-red /usr/src/node-red
 
-USER node-red
+#USER node-red
 
 # package.json contains Node-RED NPM module and node dependencies
 COPY package.json /usr/src/node-red/
