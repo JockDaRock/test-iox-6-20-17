@@ -12,10 +12,8 @@ WORKDIR /usr/src/node-red
 
 
 #Add node-red user so we aren't running as root.
-# RUN adduser -h /usr/src/node-red -D -H -u 900 -G root node-red && chown -R node-red:root /data && chown -R node-red:root /usr/sr
-c/node-red
-# RUN adduser -h /usr/src/node-red -D -H -u 900 node-red && chown -R node-red:node-red /data && chown -R node-red:node-red /usr/sr
-c/node-red
+# RUN adduser -h /usr/src/node-red -D -H -u 900 -G root node-red && chown -R node-red:root /data && chown -R node-red:root /usr/src/node-red
+# RUN adduser -h /usr/src/node-red -D -H -u 900 node-red && chown -R node-red:node-red /data && chown -R node-red:node-red /usr/src/node-red
 
 # USER node-red
 
