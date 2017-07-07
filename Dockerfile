@@ -30,11 +30,11 @@ EXPOSE 1880
 ENV FLOWS=flows.json
 
 LABEL \
-    cisco.info.name="node-red" \
-    cisco.info.description="devon energy node-red" \
-    cisco.info.version="4.0" \
-    cisco.info.author-name="Cisco" \
-    cisco.type="docker" \
+    #cisco.info.name="node-red" \
+    #cisco.info.description="devon energy node-red" \
+    #cisco.info.version="4.0" \
+    #cisco.info.author-name="Cisco" \
+    #cisco.type="docker" \
     cisco.resources.network.0.interface-name="eth0" \
     cisco.cpuarch="x86_64" \
     cisco.resources.profile="c1.large"
